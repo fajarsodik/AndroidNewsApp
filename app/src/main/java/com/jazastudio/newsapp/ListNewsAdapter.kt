@@ -26,7 +26,7 @@ class ListNewsAdapter(
     inner class ListNewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindItem(newsData: NewsData, listenerAdapter: (NewsData) -> Unit) {
             itemView.tv_header.text = newsData.title
-            itemView.tv_detail.text = newsData.publishedAt
+            itemView.tv_date.text = newsData.publishedAt
             Glide.with(itemView.context)
                 .load(newsData.urlToImage)
                 .into(itemView.iv_cover)
