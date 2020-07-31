@@ -21,8 +21,8 @@ data class NewsData(
     @SerializedName("urlToImage")
     var urlToImage: String?,
 
-    @SerializedName("published")
-    var published: String?,
+    @SerializedName("publishedAt")
+    var publishedAt: String?,
 
     @SerializedName("content")
     var content: String?
